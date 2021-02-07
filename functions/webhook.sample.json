@@ -1,0 +1,3 @@
+{
+  "body": "{\"data\":{\"type\":\"webhook-events\",\"id\":\"90427797-96b5-403a-a36e-8e9e2269833b\",\"attributes\":{\"eventType\":\"TRANSACTION_CREATED\",\"createdAt\":\"2021-01-29T14:08:36+11:00\"},\"relationships\":{\"webhook\":{\"data\":{\"type\":\"webhooks\",\"id\":\"faaf84de-fa3c-46d8-81d1-a42a9859e563\"},\"links\":{\"related\":\"https://api.up.com.au/api/v1/webhooks/faaf84de-fa3c-46d8-81d1-a42a9859e563\"}},\"transaction\":{\"data\":{\"type\":\"transactions\",\"id\":\"3f8b2bd4-81b5-4fa4-9bc4-2a3676196655\"},\"links\":{\"related\":\"https://api.up.com.au/api/v1/transactions/dc878e98-2a42-40bc-864a-8d0d60c04fef\"}}}}}"
+}

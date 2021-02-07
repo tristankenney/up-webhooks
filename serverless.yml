@@ -1,0 +1,26 @@
+service: up-webhooks
+frameworkVersion: "2"
+plugins:
+  - serverless-plugin-typescript
+  - serverless-dotenv-plugin
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  region: ap-southeast-2
+  tracing:
+    lambda: true
+functions:
+  webhook:
+    handler: functions/webhook.handler
+    events:
+      - http:
+          path: /webhook
+          method: post
+  labelCover:
+    handler: functions/labelCover.handler
+    events:
+      - sns: ${env:TOPIC_ARN}
+        filterPolicy:
+          transactionType:
+            - Cover

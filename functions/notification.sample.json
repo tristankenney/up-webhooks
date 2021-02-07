@@ -1,0 +1,31 @@
+{
+  "Records": [
+    {
+      "EventSource": "aws:sns",
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:ap-southeast-2:{{{accountId}}}:ExampleTopic",
+      "Sns": {
+        "Type": "Notification",
+        "MessageId": "95df01b4-ee98-5cb9-9903-4c221d41eb5e",
+        "TopicArn": "arn:aws:sns:ap-southeast-2:123456789012:ExampleTopic",
+        "Subject": "example subject",
+        "Message": "{\"webhook\":{\"type\":\"webhook-events\",\"id\":\"90427797-96b5-403a-a36e-8e9e2269833b\",\"attributes\":{\"eventType\":\"TRANSACTION_CREATED\",\"createdAt\":\"2021-01-29T14:08:36+11:00\"},\"relationships\":{\"webhook\":{\"data\":{\"type\":\"webhooks\",\"id\":\"faaf84de-fa3c-46d8-81d1-a42a9859e563\"},\"links\":{\"related\":\"https://api.up.com.au/api/v1/webhooks/faaf84de-fa3c-46d8-81d1-a42a9859e563\"}},\"transaction\":{\"data\":{\"type\":\"transactions\",\"id\":\"ecc4af5e-07d4-4112-9359-1303be131b16\"},\"links\":{\"related\":\"https://api.up.com.au/api/v1/transactions/ecc4af5e-07d4-4112-9359-1303be131b16\"}}}},\"data\":{\"type\":\"transactions\",\"id\":\"ecc4af5e-07d4-4112-9359-1303be131b16\",\"attributes\":{\"status\":\"SETTLED\",\"rawText\":null,\"description\":\"Cover from Groceries\",\"message\":\"Cover from Eating out\",\"holdInfo\":null,\"roundUp\":null,\"cashback\":null,\"amount\":{\"currencyCode\":\"AUD\",\"value\":\"5.90\",\"valueInBaseUnits\":200},\"foreignAmount\":null,\"settledAt\":\"2021-01-20T08:55:30+11:00\",\"createdAt\":\"2021-01-20T08:55:30+11:00\"},\"relationships\":{\"account\":{\"data\":{\"type\":\"accounts\",\"id\":\"ecc4af5e-07d4-4112-9359-1303be131b16\"},\"links\":{\"related\":\"https://api.up.com.au/api/v1/accounts/129438e6-1727-4f63-9759-9a486b05dd19\"}},\"category\":{\"data\":null},\"parentCategory\":{\"data\":null},\"tags\":{\"data\":[],\"links\":{\"self\":\"https://api.up.com.au/api/v1/transactions/ecc4af5e-07d4-4112-9359-1303be131b16/relationships/tags\"}}},\"links\":{\"self\":\"https://api.up.com.au/api/v1/transactions/ecc4af5e-07d4-4112-9359-1303be131b16\"}}}",
+        "Timestamp": "1970-01-01T00:00:00.000Z",
+        "SignatureVersion": "1",
+        "Signature": "EXAMPLE",
+        "SigningCertUrl": "EXAMPLE",
+        "UnsubscribeUrl": "EXAMPLE",
+        "MessageAttributes": {
+          "Test": {
+            "Type": "String",
+            "Value": "TestString"
+          },
+          "TestBinary": {
+            "Type": "Binary",
+            "Value": "TestBinary"
+          }
+        }
+      }
+    }
+  ]
+}
